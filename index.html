@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Teste da api module.js</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="module.js"></script>	
+	<script src="script.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#areas").each(function(){
+				Soneca.ChooseArea($(this));			
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="areas">
+		<div id="area-um">
+		</div>
+		<div id="area-dois">
+		</div>
+		<form>
+			<textarea name="area-text" id="area-text" placeholder="Digite o texto aqui"></textarea>
+			<p>Caracteres: <span>0</span></p>
+			<select name="area-select" id="area-select">
+				<option value="area-um">Area um</option>
+				<option value="area-dois">Area dois</option>
+			</select>
+		</form>
+	</div>
+
+</body>
+</html>
